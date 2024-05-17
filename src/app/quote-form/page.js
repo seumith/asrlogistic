@@ -1,5 +1,5 @@
 import SecondaryBtn from "../components/buttons/secondary-btn";
-import QouteForm from "../components/qoute/page";
+import QouteForm from "../components/quote/page";
 const page = () => {
     return (
         <>

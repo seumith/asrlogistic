@@ -1,5 +1,5 @@
 "use client"
-import QouteForm from "./components/qoute/page"
+import QuoteForm from "./components/quote/page"
 import SecondaryBtn from "./components/buttons/secondary-btn"
 import makesUsBestData from "./data/whywebest"
 import OurServiceSection from "./components/ourservices/ourServiceSection"
@@ -32,7 +32,7 @@ const Main = () => {
         </div>
       </div>
       <motion.div animate={{y : [50,0],opacity : [0,1]}} transition={{ease : "easeOut" , duration : 1}} className="opacity-0">
-        <QouteForm/>
+        <QuoteForm/>
       </motion.div>
     </section>
     <section className="about-section pl-2 lg:pl-0">
