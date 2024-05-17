@@ -1,0 +1,23 @@
+.link-style{
+  
+    color: #6c6c6c;
+    transition: 0.5s;
+  }
+  
+  .link-style:hover{
+    color: #4479E2;
+  }
+  
+  .linkPadding{
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    border-radius: 50px;
+  }
+  
+  .whatsappLink{
+    color: #38C747;
+    background-color: rgba(138, 255, 128, 0.1);
+  }
+  .callusLink{
+    color: #4479E2;
+    background-color: rgb(68, 121, 226,0.15);
+  }

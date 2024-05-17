@@ -1,0 +1,57 @@
+div[data-open="true"]{
+    color: #363636;
+    font-size: 1rem;
+    padding: 0px 10px 15px 10px;
+    background-color: #f2efef;
+}
+
+span[data-open="true"]{
+    font-size: 1.2rem;
+    text-align: left;
+    color: #191919;
+    padding-block: 15px;
+    font-weight: 600;
+}
+
+span > svg{
+    display: none;
+}
+
+h2 > button{
+    font-size: 1.2rem;
+    color: #d1d1d1;
+    text-align: left;
+    padding: 20px 10px;
+}
+button:focus{
+    outline: none;
+}
+
+@media (min-width : 1024px) {
+    div[data-open="true"]{
+        color: #363636;
+        font-size: 1.3rem;
+        padding: 0px 10px 15px 10px;
+        background-color: #f2efef;
+    }
+    
+    span[data-open="true"]{
+        font-size: 1.5rem;
+        color: #191919;
+        padding-block: 15px;
+        font-weight: 600;
+    }
+    
+    span > svg{
+        display: none;
+    }
+    
+    h2 > button{
+        font-size: 1.5rem;
+        color: #d1d1d1;
+        padding: 20px 10px;
+    }
+    button:focus{
+        outline: none;
+    }
+}

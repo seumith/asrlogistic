@@ -1,0 +1,23 @@
+.input-field::placeholder{
+    color : #717171;
+}
+
+.input-field-area{
+    min-height: 7.6rem;
+    max-height: 7.6rem;
+}
+
+.input-field::-webkit-resizer{
+    -webkit-appearance: none;
+}
+
+.input-field:focus{
+    border: none;
+    outline: none;
+    outline: 2px solid #4479E2;
+}
+.input-field::-webkit-outer-spin-button,
+.input-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

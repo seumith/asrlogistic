@@ -1,0 +1,32 @@
+.swiper {
+    padding-top: 50px;
+    width: 90%;
+    height: 300px;
+    padding-bottom: 50px;
+    margin-top: 3rem;
+}
+
+.swiper-slide {
+    border: 2px solid #4479E2;
+    border-radius: 8px;
+    background-color: rgba(13, 13, 13, 0.26);
+}
+
+.swiper-slide-prev {
+    border-color: #444444;
+}
+
+.swiper-slide-next {
+    border-color: #444444;
+}
+
+.swiper-pagination-bullet{
+    background: #fff!important;
+}
+
+@media (min-width : 1024px) {
+    .swiper {
+        width: 60%;
+        height: 300px;
+    }
+}
