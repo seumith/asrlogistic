@@ -37,8 +37,8 @@ export default function Testimonial() {
                     return (
                         <SwiperSlide key={name}>
                             <div className='px-5 pt-3'>
-                                <p className='text-[1.8rem] text-sub-heading'>{name}</p>
-                                <p className='mt-4 text-paragraph'>{feedback}</p>
+                                <h3 className='text-[1.8rem] '>{name}</h3>
+                                <p className='mt-4 '>{feedback}</p>
                             </div>
                         </SwiperSlide>
                     )

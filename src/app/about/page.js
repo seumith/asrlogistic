@@ -5,7 +5,11 @@ import Image from "next/image"
 import "./about.css"
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { RxCrossCircled } from "react-icons/rx";
+import { useEffect } from "react";
 const Aboutus = () => {
+  useEffect(()=>{
+    document.body.setAttribute("data-theme",localStorage.getItem("theme") || "light")
+  },[])
   return (
     <section className="about-section pl-2 md:pl-0">
       <h1 className="text-[2.2rem] mt-[3rem] md:mt-0 lg:text-center">About us</h1>
@@ -20,7 +24,7 @@ const Aboutus = () => {
       <div className="table-container flex flex-col lg:flex-row">
       <div>
       <h2 className=" leading-8 md:leading-normal text-[1.4rem] md:text-2xl mt-8 text-sub-heading font-semibold">What we offer ?</h2>
-      <Table className="mt-6 w-[95%]" aria-label="Example static collection table">
+      <Table className="w-[95%]" aria-label="Example static collection table">
       <TableHeader>
         <TableColumn>Service</TableColumn>
         <TableColumn></TableColumn>
@@ -59,7 +63,7 @@ const Aboutus = () => {
       </div>
       <div>
       <h2 className=" leading-8 md:leading-normal text-[1.4rem] md:text-2xl mt-8 text-sub-heading font-semibold">Our mission</h2>
-      <Table className="mt-6 w-[95%]" aria-label="Example static collection table">
+      <Table className=" w-[95%]" aria-label="Example static collection table">
       <TableHeader>
         <TableColumn>Mission</TableColumn>
         <TableColumn></TableColumn>

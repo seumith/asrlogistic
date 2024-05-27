@@ -1,5 +1,14 @@
+
+
+[data-theme="light"]
+
 .input-field::placeholder{
-    color : #717171;
+    color : var(--placeholder);
+}
+
+.input-field{
+    
+    background-color: var(--box-color);
 }
 
 .input-field-area{

@@ -3,9 +3,51 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background : #000;
+  --placeholder : #717171;
+  --input-color : silver;
+  --box-color : rgba(50, 50, 50, 0.26);
+  --service-box-color : rgba(50, 50, 50, 0.26);
+  --heading-3-color : rgb(230, 230, 230);
+  --paragraph : #909090;
+  --heading-2-color : #d1d1d1;
+  --heading-1-color : white;
+  --brand-name-color : rgb(239, 239, 239);
+  --theme-icon-color : rgb(212, 212, 212);
+}
+
+[data-theme="light"]{
+  --theme-icon-color : rgb(67, 67, 67);
+  --brand-name-color : rgb(61, 59, 59);
+  --background : #fff;
+  --placeholder : rgb(84, 84, 84);
+  --box-color : rgba(237, 237, 237, 0.496);
+  --service-box-color : rgba(234, 234, 234, 0.312);
+  --heading-3-color : rgb(22, 22, 22);
+  --paragraph : #565656;
+  --heading-2-color : #414141;
+  --heading-1-color : black;
+}
+
+.theme-icons{
+  color: var(--theme-icon-color);
+}
+
+p{
+  color: var(--paragraph);
+}
+h2{
+  color: var(--heading-2-color)!important;
+}
+h3{
+  color: var(--heading-3-color)!important;
+}
+h1{
+  color: var(--heading-1-color);
+}
+
+.we-best-box{
+  background-color: var(--service-box-color)!important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,12 +60,8 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  /* width: 90%; */
   margin: auto;
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-
+  background-color: var(--background);
 }
 
 html {
@@ -37,10 +75,10 @@ html {
 }
 
 .brand-name {
-  color: transparent;
-  background: linear-gradient(180deg, rgb(94, 94, 255), rgb(153, 0, 255), rgb(255, 192, 203));
+  color: var(--brand-name-color);
+  /* background: linear-gradient(180deg, rgb(94, 94, 255), rgb(153, 0, 255), rgb(255, 192, 203));
   background-clip: text;
--webkit-background-clip: text;
+-webkit-background-clip: text; */
 }
 
 .progress-bar {

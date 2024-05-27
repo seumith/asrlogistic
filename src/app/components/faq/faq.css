@@ -2,13 +2,21 @@ div[data-open="true"]{
     color: #363636;
     font-size: 1rem;
     padding: 0px 10px 15px 10px;
-    background-color: #f2efef;
+}
+
+:root{
+    --data-open-color : #aeaeae;
+    --data-open-heading : rgb(218, 218, 218);
+}
+[data-theme="light"]{
+    --data-open-heading : rgb(44, 44, 44);
+    --data-open-color : #484848;
 }
 
 span[data-open="true"]{
     font-size: 1.2rem;
     text-align: left;
-    color: #191919;
+    color: var(--data-open-color);
     padding-block: 15px;
     font-weight: 600;
 }
@@ -19,7 +27,7 @@ span > svg{
 
 h2 > button{
     font-size: 1.2rem;
-    color: #d1d1d1;
+    color: var(--heading-2-color);
     text-align: left;
     padding: 20px 10px;
 }
@@ -29,15 +37,15 @@ button:focus{
 
 @media (min-width : 1024px) {
     div[data-open="true"]{
-        color: #363636;
+        color: var(--data-open-color);
         font-size: 1.3rem;
         padding: 0px 10px 15px 10px;
-        background-color: #f2efef;
+        /* background-color: #f2efef00; */
     }
     
     span[data-open="true"]{
         font-size: 1.5rem;
-        color: #191919;
+        color: var(--data-open-heading);
         padding-block: 15px;
         font-weight: 600;
     }
@@ -48,7 +56,7 @@ button:focus{
     
     h2 > button{
         font-size: 1.5rem;
-        color: #d1d1d1;
+        color: var(--heading-2-color);
         padding: 20px 10px;
     }
     button:focus{

@@ -1,17 +1,30 @@
+:root{
+    --td-color : rgb(191, 191, 191);
+    --tick-color : rgb(130, 255, 128);
+}
+[data-theme="light"]{
+    --td-color : rgb(83, 83, 83);
+    --tick-color : rgb(50, 209, 48);
+}
+
+
 td[role="rowheader"]{
-    color: rgb(191, 191, 191);
+    color: var(--td-color);
     width: 20rem;
     padding: 7px 0;
 }
 
 .tick{
     font-size: 1.3rem;
-    color: rgb(130, 255, 128);
+    color: var(--tick-color);
 }
+
+
+
 
 @media (min-width:1024px) {
     td[role="rowheader"]{
-        color: rgb(191, 191, 191);
+        color: var(--td-color);
         width: 35rem;
         padding: 7px 0;
     }

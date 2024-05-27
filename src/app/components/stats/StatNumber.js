@@ -39,19 +39,19 @@ const StatNumber = () => {
         <div className="stat-container w-[80%] md:w-full grid gap-2 grid-cols-2 md:grid-cols-4">
             <div className="move-count">
                 <p className=" text-[2.5rem] md:text-[4rem] text-primary-blue font-bold text-center">{counter}+</p>
-                <p className="text-[1rem] md:text-2xl text-sub-heading text-center">home & offices moved</p>
+                <p className="text-[1rem] md:text-2xl text-center">home & offices moved</p>
             </div>
             <div className="happy-clients">
                 <p className=" text-[2.5rem] md:text-[4rem] text-primary-blue font-bold text-center">{happyClient}+</p>
-                <p className="text-[1rem] md:text-2xl text-sub-heading text-center">Happy clients</p>
+                <p className="text-[1rem] md:text-2xl text-center">Happy clients</p>
             </div>
             <div className="experience">
                 <p className=" text-[2.5rem] md:text-[4rem] text-primary-blue font-bold text-center">{experience}+</p>
-                <p className="text-[1rem] md:text-2xl text-sub-heading text-center">Years in business</p>
+                <p className="text-[1rem] md:text-2xl text-center">Years in business</p>
             </div>
             <div className="satisfaction-ratio">
                 <p className=" text-[2.5rem] md:text-[4rem] text-primary-blue font-bold text-center">{ratio}%</p>
-                <p className="text-[1rem] md:text-2xl text-sub-heading text-center">Satisfaction ratio</p>
+                <p className="text-[1rem] md:text-2xl text-center">Satisfaction ratio</p>
             </div>
         </div>
     </div>

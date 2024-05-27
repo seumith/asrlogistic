@@ -3,3 +3,8 @@
         row-gap: 1rem;
     }
 }
+
+.service-card{
+    background-color: var(--service-box-color)!important;
+  }
+  

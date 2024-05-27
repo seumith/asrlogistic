@@ -3,7 +3,7 @@ import QouteForm from "../components/quote/page";
 const page = () => {
     return (
         <>
-            <div className="w-[25rem] m-auto w-max-[25rem]">
+            <div className="w-[95%] m-auto md:w-[55rem]">
                 <QouteForm />
                 <div>
                     <SecondaryBtn title="home" link="/" arrD="hidden" />

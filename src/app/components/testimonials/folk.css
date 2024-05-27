@@ -9,7 +9,7 @@
 .swiper-slide {
     border: 2px solid #4479E2;
     border-radius: 8px;
-    background-color: rgba(13, 13, 13, 0.26);
+    background-color: transparent;
 }
 
 .swiper-slide-prev {
